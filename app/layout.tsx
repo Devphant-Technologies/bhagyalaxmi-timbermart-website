@@ -4,9 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Bhagyalaxmi Timber Mart | Wooden Packaging Solutions",
   description: "Export and domestic wooden boxes, pallets, crates, cases, packing materials and on-site packing services from Ankleshwar, Gujarat.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
