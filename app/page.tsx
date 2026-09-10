@@ -5,17 +5,28 @@ const products = [
   ["01", "Wooden Pallets", "Stringer, block and perimeter-base pallets in standard or custom specifications for shipping and warehousing.", "/products/wooden-pallets"],
   ["02", "Wooden Boxes", "Solid timber and plywood boxes engineered to protect valuable machinery through storage, handling and transit.", "/products/wooden-boxes"],
   ["03", "Wooden Crates", "Ordinary, pinewood, palletized and heavy-duty crates built around your load, movement and destination.", "/products/wooden-crates"],
-  ["04", "Wooden Cases", "Closed, high-strength cases designed for maximum safety during export and interstate movement.", "/products/wooden-cases"],
+  ["04", "Solid Wooden Box", "Fully enclosed solid timber boxes for machinery, equipment and high-value cargo in domestic and export movement.", "/products/solid-wooden-box"],
+  ["05", "Wooden Saddle", "Shaped wooden supports that cradle pipes, machinery and irregular loads during packing, storage and transit.", "/products/wooden-saddle"],
+  ["06", "Furniture Wood", "Indian and imported furniture timbers for doors, interiors, cabinetry and fine woodwork.", "/products/furniture-wood"],
 ];
 const services = [
-  ["Lashing & Stuffing", "Professional cargo securing and container stuffing that improves load stability and reduces transit damage."],
-  ["Palletization", "Systematic palletizing for safer handling, efficient storage, forklift access and container loading."],
   ["HDPE Tarpaulin Cover", "Protection against moisture, dust, rain and external damage for domestic and export shipments."],
   ["On-site Packing", "Inspection, packing, lashing and sealing delivered at your location by our experienced team."],
 ];
 const boxTypes = ["Domestic Jungle Wooden Box", "Export Jungle Wooden Box", "Export Pine Wooden Box", "Hard Wood Packing Box", "Local Wooden Crate", "Pine Wood Box", "Plywood Bolting Box", "Export Wooden Crate", "Heavy Duty Export Box", "Wooden Saddle"];
 const materials = ["Air bubble sheet roll", "Corrugated box", "Corrugated corner", "Corrugated paper roll", "Lashing belt", "Stretch film roll", "Silica gel", "MS stripping roll"];
-const regions = ["Ankleshwar", "Bharuch", "Dahej", "Jhagadia", "Surat", "Vapi", "Vadodara", "Anand", "Ahmedabad", "Kutch"];
+const regions = [
+  ["Ankleshwar", true],
+  ["Bharuch", false],
+  ["Dahej", false],
+  ["Jhagadia", true],
+  ["Surat", false],
+  ["Vapi", true],
+  ["Vadodara", true],
+  ["Anand", false],
+  ["Ahmedabad", false],
+  ["Panoli", true],
+] as const;
 
 export default function Home() {
   return <main>
@@ -39,7 +50,7 @@ export default function Home() {
 
     <section id="about" className="section about-section">
       <div><p className="eyebrow"><span /> About BTM</p><h2>Built on experience.<br />Trusted across industries.</h2></div>
-      <div className="about-copy"><p>Incepted in 1990, Shree Bhagyalaxmi Timber Mart has established itself as a prominent and trusted name in timber and wooden packaging. Decades of consistent growth have shaped our reputation for quality products, reliable service and ethical business practices.</p><p>Our deep industry knowledge, skilled workforce and customer-focused approach help us deliver wooden boxes, crates, cases, plywood boxes and corrugated packaging solutions with confidence.</p><div className="leadership"><span>Led by</span><strong>Mr. Suraj Patel</strong><strong>Mr. Jay Patel</strong></div></div>
+      <div className="about-copy"><p>Founded in 1990 by <strong className="founder-name">Mr. Himatlal K. Patel</strong>, Shree Bhagyalaxmi Timber Mart has established itself as a prominent and trusted name in timber and wooden packaging. Decades of consistent growth have shaped our reputation for quality products, reliable service and ethical business practices.</p><p>Our deep industry knowledge, skilled workforce and customer-focused approach help us deliver wooden boxes, crates, cases, plywood boxes and corrugated packaging solutions with confidence.</p><div className="leadership"><span>Led by</span><strong>Mr. Suraj Patel</strong><strong>Mr. Jay Patel</strong></div></div>
     </section>
 
     <section className="industries-band"><p>Serving industries</p><div><span>Pharmaceutical</span><span>Engineering</span><span>Machinery & Equipment</span><span>Chemical</span><span>Export</span></div></section>
@@ -56,7 +67,7 @@ export default function Home() {
 
     <section className="materials-section"><div><p className="eyebrow"><span /> Complete the pack</p><h2>Quality packing materials,<br />all under one roof.</h2></div><div className="material-list">{materials.map(m=><span key={m}>{m}</span>)}</div></section>
 
-    <section className="reach-section"><div><p className="eyebrow light"><span /> Our reach</p><h2>From Gujarat.<br />Trusted far beyond.</h2><p>Our customer-first approach has helped us build long-term relationships with industrial, commercial and export-oriented clients across the region and around the globe.</p></div><div className="region-cloud">{regions.map((r,i)=><span className={i%3===0?"accent":""} key={r}>{r}</span>)}</div></section>
+    <section className="reach-section"><div><p className="eyebrow light"><span /> Our reach</p><h2>From Gujarat.<br />Trusted far beyond.</h2><p>Our customer-first approach has helped us build long-term relationships with industrial, commercial and export-oriented clients across the region and around the globe.</p></div><div className="region-cloud">{regions.map(([r, accent])=><span className={accent?"accent":""} key={r}>{r}</span>)}</div></section>
 
     <footer id="contact"><div className="footer-top"><div><p className="eyebrow light"><span /> Start a conversation</p><h2>Need packaging that<br /><em>fits the job?</em></h2></div><a className="round-cta" href="tel:+919033933063">Call now <span>↗</span></a></div><div className="contact-grid"><div><span>Phone</span><a href="tel:+919033933063">+91 90339 33063</a><a href="tel:+919898727522">+91 98987 27522</a></div><div><span>Email</span><a href="mailto:btm_7508@yahoo.co.in">btm_7508@yahoo.co.in</a><a href="mailto:btm.7508@gmail.com">btm.7508@gmail.com</a></div><div><span>Visit</span><p>Plot No. 7508, Karmatur Cross Road,<br />GIDC Estate, Ankleshwar – 393002</p></div></div><div className="footer-bottom"><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p><span>© 2026 Bhagyalaxmi Timber Mart</span></div></footer>
   </main>;

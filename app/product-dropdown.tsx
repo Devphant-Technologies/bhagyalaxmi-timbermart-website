@@ -13,7 +13,9 @@ const products = [
   ["01", "Wooden Pallets", "Shipping & warehousing", "/products/wooden-pallets"],
   ["02", "Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
   ["03", "Wooden Crates", "Open & heavy-duty", "/products/wooden-crates"],
-  ["04", "Wooden Cases", "Secure enclosed packing", "/products/wooden-cases"],
+  ["04", "Solid Wooden Box", "Heavy timber enclosure", "/products/solid-wooden-box"],
+  ["05", "Wooden Saddle", "Load support & cradling", "/products/wooden-saddle"],
+  ["06", "Furniture Wood", "Indian imported timbers", "/products/furniture-wood"],
 ];
 
 export default function ProductDropdown({ active = false }: { active?: boolean }) {
@@ -22,7 +24,7 @@ export default function ProductDropdown({ active = false }: { active?: boolean }
       Products <span aria-hidden="true">⌄</span>
     </DropdownMenuTrigger>
     <DropdownMenuContent className="product-menu-content" align="center" sideOffset={10}>
-      <DropdownMenuLabel className="product-menu-label"><span>Product range</span><b>04 solutions</b></DropdownMenuLabel>
+      <DropdownMenuLabel className="product-menu-label"><span>Product range</span><b>06 solutions</b></DropdownMenuLabel>
       <DropdownMenuSeparator />
       {products.map(([number, title, description, href]) =>
         <DropdownMenuItem key={href} className="product-menu-item" asChild>

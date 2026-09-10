@@ -15,7 +15,9 @@ const products = [
   ["01", "Wooden Pallets", "/products/wooden-pallets"],
   ["02", "Wooden Boxes", "/products/wooden-boxes"],
   ["03", "Wooden Crates", "/products/wooden-crates"],
-  ["04", "Wooden Cases", "/products/wooden-cases"],
+  ["04", "Solid Wooden Box", "/products/solid-wooden-box"],
+  ["05", "Wooden Saddle", "/products/wooden-saddle"],
+  ["06", "Furniture Wood", "/products/furniture-wood"],
 ];
 
 export default function MobileMenu() {
@@ -36,7 +38,7 @@ export default function MobileMenu() {
         <SheetClose asChild><a href="/contact"><span>04</span><strong>Contact</strong><b>↗</b></a></SheetClose>
       </div>
       <div className="mobile-products"><p>Product range</p>{products.map(([n,title,href])=><SheetClose asChild key={href}><a href={href}><span>{n}</span><strong>{title}</strong><b>→</b></a></SheetClose>)}</div>
-      <SheetFooter className="mobile-menu-footer"><a href="tel:+919033933063"><span>Talk to our team</span><strong>+91 90339 33063</strong></a><p>Complete wooden packaging solutions<br />for export & domestic use.</p></SheetFooter>
+      <SheetFooter className="mobile-menu-footer"><a href="tel:+919033933063"><span>Talk to our team</span><strong>+91 90339 33063</strong></a><a className="mobile-whatsapp" href="https://wa.me/919033933063" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+91 90339 33063</strong></a><p>Complete wooden packaging solutions<br />for export & domestic use.</p></SheetFooter>
     </SheetContent>
   </Sheet>;
 }
