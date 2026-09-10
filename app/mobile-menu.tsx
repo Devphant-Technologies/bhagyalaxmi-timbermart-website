@@ -27,7 +27,7 @@ export default function MobileMenu() {
     </SheetTrigger>
     <SheetContent className="mobile-menu-panel" side="right">
       <SheetHeader className="mobile-menu-head">
-        <img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" />
+        <img src="/btm-logo-light.png" alt="Bhagyalaxmi Timber Mart" />
         <SheetTitle>Navigation</SheetTitle>
         <SheetDescription>Explore Bhagyalaxmi Timber Mart</SheetDescription>
       </SheetHeader>

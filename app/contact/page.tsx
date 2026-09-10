@@ -24,6 +24,6 @@ export default function ContactPage() {
 
     <section className="map-section"><div className="map-copy"><p className="eyebrow light"><span /> Ankleshwar, Gujarat</p><h2>At the heart of<br />the industrial belt.</h2><p>Conveniently located in GIDC Estate, serving clients across Ankleshwar, Bharuch, Dahej, Jhagadia and throughout Gujarat.</p></div><div className="map-frame"><iframe title="Bhagyalaxmi Timber Mart location in Ankleshwar" src="https://www.google.com/maps?q=Plot%20No.%207508%2C%20Karmatur%20Cross%20Road%2C%20GIDC%20Estate%2C%20Ankleshwar%20393002&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /></div></section>
 
-    <footer className="contact-footer"><div><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p></div><a href="/">Back to home <span>↗</span></a><span>© 2026 Bhagyalaxmi Timber Mart</span></footer>
+    <footer className="contact-footer"><div><img src="/btm-logo-light.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p></div><a href="/">Back to home <span>↗</span></a><span>© 2026 Bhagyalaxmi Timber Mart</span></footer>
   </main>;
 }

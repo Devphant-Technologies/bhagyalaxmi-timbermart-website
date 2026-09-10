@@ -44,6 +44,6 @@ export default function AboutPage() {
 
     <section className="about-reach"><div><p className="eyebrow"><span /> Growing through trust</p><h2>Rooted in Ankleshwar.<br />Serving across Gujarat.</h2></div><div><p>Our customer-interactive approach has helped us serve and retain clients across Ankleshwar, Bharuch, Dahej, Jhagadia, Surat, Vapi, Vadodara, Anand, Ahmedabad and Panoli—as well as customers beyond the region.</p><a className="button orange" href="/contact">Start a conversation <span>↗</span></a></div></section>
 
-    <footer className="contact-footer"><div><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p></div><a href="/contact">Contact our team <span>↗</span></a><span>© 2026 Bhagyalaxmi Timber Mart</span></footer>
+    <footer className="contact-footer"><div><img src="/btm-logo-light.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p></div><a href="/contact">Contact our team <span>↗</span></a><span>© 2026 Bhagyalaxmi Timber Mart</span></footer>
   </main>;
 }
