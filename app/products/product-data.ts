@@ -70,6 +70,7 @@ export const saddle: ProductData = {
     { title: "Packing flexibility", text: "Works as a standalone support or as part of a complete packing solution." },
   ],
   next: { label: "Furniture Wood", href: "/products/furniture-wood" },
+  typesImage: { src: "/saddle-construction.jpg", alt: "Heavy timber pipe saddle with a curved cradle, braced base and bolted joints" },
 };
 
 export const furnitureWood: ProductData = {

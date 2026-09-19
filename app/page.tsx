@@ -14,6 +14,18 @@ const services = [
   ["HDPE Tarpaulin Cover", "Protection against moisture, dust, rain and external damage for domestic and export shipments."],
   ["On-site Packing", "Inspection, packing, lashing and sealing delivered at your location by our experienced team."],
 ];
+const packingSteps = [
+  ["01", "Timber, plywood and protective packing prepared beside the cargo"],
+  ["02", "Wooden crate base assembled on the shop floor"],
+  ["03", "Machinery inspected and measured before packing"],
+  ["04", "Cargo lowered onto the timber base"],
+  ["05", "Crate walls built around the secured load"],
+  ["06", "Internal blocking, bolting and lashing of the cargo"],
+  ["07", "Plywood lid fitted and fastened to close the crate"],
+  ["08", "Handling marks and identification applied to the crate"],
+  ["09", "Finished crate checked before dispatch"],
+  ["10", "Packed crate loaded for transit"],
+];
 const boxTypes = ["Domestic Jungle Wooden Box", "Export Jungle Wooden Box", "Export Pine Wooden Box", "Hard Wood Packing Box", "Local Wooden Crate", "Pine Wood Box", "Plywood Bolting Box", "Export Wooden Crate", "Heavy Duty Export Box", "Wooden Saddle"];
 const materials = ["Air bubble sheet roll", "Corrugated box", "Corrugated corner", "Corrugated paper roll", "Lashing belt", "Stretch film roll", "Silica gel", "MS stripping roll"];
 const regions = [
@@ -64,7 +76,7 @@ export default function Home() {
 
     <section className="dark-section"><div className="dark-intro"><p className="eyebrow light"><span /> Built your way</p><h2>Every load is different.<br /><em>So is every box.</em></h2><p>We select the right construction—from economical local wood to export-friendly pine and high-strength plywood—based on weight, handling, environment and destination.</p></div><div className="type-list">{boxTypes.map((t,i)=><div key={t}><span>{String(i+1).padStart(2,"0")}</span><strong>{t}</strong></div>)}</div></section>
 
-    <section id="services" className="services-section"><div className="services-image"><img src="/onsite-services.jpg" alt="Professional container stuffing and lashing of industrial cargo" /><div><strong>End-to-end support</strong><span>From inspection to sealing</span></div></div><div className="services-content"><p className="eyebrow"><span /> Our services</p><h2>Safe at source.<br />Secure in transit.</h2><div className="service-list">{services.map(([t,x],i)=><article key={t}><span>0{i+1}</span><div><h3>{t}</h3><p>{x}</p></div></article>)}</div></div></section>
+    <section id="services" className="services-section"><div className="services-image"><img src="/onsite-services.jpg" alt="Professional container stuffing and lashing of industrial cargo" /><div><strong>End-to-end support</strong><span>From inspection to sealing</span></div></div><div className="services-content"><p className="eyebrow"><span /> Our services</p><h2>Safe at source.<br />Secure in transit.</h2><div className="service-list">{services.map(([t,x],i)=><article key={t}><span>0{i+1}</span><div><h3>{t}</h3><p>{x}</p></div></article>)}</div><div className="packing-series">{packingSteps.map(([n,alt])=><figure key={n}><img src={`/packaging-series/step-${n}.jpg`} alt={alt} /></figure>)}</div></div></section>
 
     <section className="materials-section"><div><p className="eyebrow"><span /> Complete the pack</p><h2>Quality packing materials,<br />all under one roof.</h2></div><div className="material-list">{materials.map(m=><span key={m}>{m}</span>)}</div></section>
 
