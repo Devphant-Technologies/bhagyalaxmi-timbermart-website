@@ -3,12 +3,12 @@ import MobileMenu from "./mobile-menu";
 import HeroSlideshow from "./hero-slideshow";
 
 const products = [
-  ["01", "Wooden Pallets", "Stringer, block and perimeter-base pallets in standard or custom specifications for shipping and warehousing.", "/products/wooden-pallets"],
-  ["02", "Wooden Boxes", "Solid timber and plywood boxes engineered to protect valuable machinery through storage, handling and transit.", "/products/wooden-boxes"],
-  ["03", "Wooden Crates", "Ordinary, pinewood, palletized and heavy-duty crates built around your load, movement and destination.", "/products/wooden-crates"],
-  ["04", "Solid Wooden Box", "Fully enclosed solid timber boxes for machinery, equipment and high-value cargo in domestic and export movement.", "/products/solid-wooden-box"],
-  ["05", "Wooden Saddle", "Shaped wooden supports that cradle pipes, machinery and irregular loads during packing, storage and transit.", "/products/wooden-saddle"],
-  ["06", "Furniture Wood", "Indian and imported furniture timbers for doors, interiors, cabinetry and fine woodwork.", "/products/furniture-wood"],
+  ["01", "Furniture Wood", "Indian and imported furniture timbers for doors, interiors, cabinetry and fine woodwork.", "/products/furniture-wood"],
+  ["02", "Wooden Pallets", "Stringer, block and perimeter-base pallets in standard or custom specifications for shipping and warehousing.", "/products/wooden-pallets"],
+  ["03", "Wooden Boxes", "Solid timber and plywood boxes engineered to protect valuable machinery through storage, handling and transit.", "/products/wooden-boxes"],
+  ["04", "Wooden Crates", "Ordinary, pinewood, palletized and heavy-duty crates built around your load, movement and destination.", "/products/wooden-crates"],
+  ["05", "Solid Wooden Box", "Fully enclosed solid timber boxes for machinery, equipment and high-value cargo in domestic and export movement.", "/products/solid-wooden-box"],
+  ["06", "Wooden Saddle", "Shaped wooden supports that cradle pipes, machinery and irregular loads during packing, storage and transit.", "/products/wooden-saddle"],
 ];
 const services = [
   ["HDPE Tarpaulin Cover", "Protection against moisture, dust, rain and external damage for domestic and export shipments."],
@@ -51,7 +51,7 @@ export default function Home() {
 
     <section id="about" className="section about-section">
       <div><p className="eyebrow"><span /> About BTM</p><h2>Built on experience.<br />Trusted across industries.</h2></div>
-      <div className="about-copy"><p>Founded in 1990 by <strong className="founder-name">Mr. Himatlal K. Patel</strong>, Shree Bhagyalaxmi Timber Mart has established itself as a prominent and trusted name in timber and wooden packaging. Decades of consistent growth have shaped our reputation for quality products, reliable service and ethical business practices.</p><p>Our deep industry knowledge, skilled workforce and customer-focused approach help us deliver wooden boxes, crates, cases, plywood boxes and corrugated packaging solutions with confidence.</p><div className="leadership"><span>Led by</span><strong>Mr. Suraj Patel</strong><strong>Mr. Jay Patel</strong></div></div>
+      <div className="about-copy"><p>Founded in 1990 by <strong className="founder-name">Mr. Himatlal K. Patel</strong>, Shree Bhagyalaxmi Timber Mart has established itself as a prominent and trusted name in timber and wooden packaging. Decades of consistent growth have shaped our reputation for quality products, reliable service and ethical business practices.</p><p>Our deep industry knowledge, skilled workforce and customer-focused approach help us deliver wooden boxes, crates, cases, plywood boxes and corrugated packaging solutions with confidence.</p><div className="leadership"><span>Led by</span><strong>Mr. Suraj Patel</strong><strong>&amp;</strong><strong>Mr. Jay Patel</strong></div></div>
     </section>
 
     <section className="industries-band"><p>Serving industries</p><div><span>Pharmaceutical</span><span>Engineering</span><span>Machinery & Equipment</span><span>Chemical</span><span>Export</span></div></section>

@@ -10,12 +10,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const products = [
-  ["01", "Wooden Pallets", "Shipping & warehousing", "/products/wooden-pallets"],
-  ["02", "Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
-  ["03", "Wooden Crates", "Open & heavy-duty", "/products/wooden-crates"],
-  ["04", "Solid Wooden Box", "Heavy timber enclosure", "/products/solid-wooden-box"],
-  ["05", "Wooden Saddle", "Load support & cradling", "/products/wooden-saddle"],
-  ["06", "Furniture Wood", "Indian imported timbers", "/products/furniture-wood"],
+  ["01", "Furniture Wood", "Indian imported timbers", "/products/furniture-wood"],
+  ["02", "Wooden Pallets", "Shipping & warehousing", "/products/wooden-pallets"],
+  ["03", "Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
+  ["04", "Wooden Crates", "Open & heavy-duty", "/products/wooden-crates"],
+  ["05", "Solid Wooden Box", "Heavy timber enclosure", "/products/solid-wooden-box"],
+  ["06", "Wooden Saddle", "Load support & cradling", "/products/wooden-saddle"],
 ];
 
 export default function ProductDropdown({ active = false }: { active?: boolean }) {

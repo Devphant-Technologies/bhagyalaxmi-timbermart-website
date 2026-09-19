@@ -12,12 +12,12 @@ import {
 } from "@/components/ui/sheet";
 
 const products = [
-  ["01", "Wooden Pallets", "/products/wooden-pallets"],
-  ["02", "Wooden Boxes", "/products/wooden-boxes"],
-  ["03", "Wooden Crates", "/products/wooden-crates"],
-  ["04", "Solid Wooden Box", "/products/solid-wooden-box"],
-  ["05", "Wooden Saddle", "/products/wooden-saddle"],
-  ["06", "Furniture Wood", "/products/furniture-wood"],
+  ["01", "Furniture Wood", "/products/furniture-wood"],
+  ["02", "Wooden Pallets", "/products/wooden-pallets"],
+  ["03", "Wooden Boxes", "/products/wooden-boxes"],
+  ["04", "Wooden Crates", "/products/wooden-crates"],
+  ["05", "Solid Wooden Box", "/products/solid-wooden-box"],
+  ["06", "Wooden Saddle", "/products/wooden-saddle"],
 ];
 
 export default function MobileMenu() {
