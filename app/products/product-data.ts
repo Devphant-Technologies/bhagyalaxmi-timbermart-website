@@ -38,6 +38,7 @@ export const solidBox: ProductData = {
     { title: "Made to cargo", text: "Dimensions, access and internal supports are planned around the actual load." },
   ],
   next: { label: "Wooden Saddle", href: "/products/wooden-saddle" },
+  typesImage: { src: "/solid-box-construction.jpg", alt: "Heavy solid timber packing box with metal corner plates and a forklift-ready base" },
 };
 
 export const saddle: ProductData = {
