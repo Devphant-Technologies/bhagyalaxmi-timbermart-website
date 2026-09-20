@@ -54,7 +54,7 @@ export default function Home() {
       <HeroSlideshow />
       <div className="hero-shade" /><div className="hero-content">
         <p className="eyebrow light"><span /> Since 1990 · Ankleshwar</p>
-        <h1>Timber strength.<br /><em>Rooted in craft.</em></h1>
+        <h1>Wood that works.<br /><em>Selected for strength.</em></h1>
         <p className="hero-copy">Quality timber and furniture woods for industry and craft—selected for strength, seasoned for lasting work.</p>
         <div className="hero-actions"><a className="button orange" href="#products">Explore products <span>↗</span></a><a className="text-link" href="#contact">Request a timber consultation</a></div>
       </div>
