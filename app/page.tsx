@@ -54,9 +54,9 @@ export default function Home() {
       <HeroSlideshow />
       <div className="hero-shade" /><div className="hero-content">
         <p className="eyebrow light"><span /> Since 1990 · Ankleshwar</p>
-        <h1>Packaging strength.<br /><em>Delivered in wood.</em></h1>
-        <p className="hero-copy">Complete wooden packaging solutions for export and domestic use—made around your cargo, built for the journey ahead.</p>
-        <div className="hero-actions"><a className="button orange" href="#products">Explore products <span>↗</span></a><a className="text-link" href="#contact">Request a packing consultation</a></div>
+        <h1>Timber strength.<br /><em>Rooted in craft.</em></h1>
+        <p className="hero-copy">Quality timber and furniture woods for industry and craft—selected for strength, seasoned for lasting work.</p>
+        <div className="hero-actions"><a className="button orange" href="#products">Explore products <span>↗</span></a><a className="text-link" href="#contact">Request a timber consultation</a></div>
       </div>
       <div className="hero-stat"><strong>35+</strong><span>Years of trusted<br />craftsmanship</span></div><div className="scroll-mark">Scroll to discover <span>↓</span></div>
     </section>
