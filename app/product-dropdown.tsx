@@ -10,12 +10,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const products = [
-  ["01", "Furniture Wood", "Indian imported timbers", "/products/furniture-wood"],
-  ["02", "Wooden Pallets", "Shipping & warehousing", "/products/wooden-pallets"],
-  ["03", "Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
-  ["04", "Wooden Crates", "Open & heavy-duty", "/products/wooden-crates"],
-  ["05", "Solid Wooden Box", "Heavy timber enclosure", "/products/solid-wooden-box"],
-  ["06", "Wooden Saddle", "Load support & cradling", "/products/wooden-saddle"],
+  ["Furniture Wood", "Indian imported timbers", "/products/furniture-wood"],
+  ["Wooden Pallets", "Shipping & warehousing", "/products/wooden-pallets"],
+  ["Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
+  ["Wooden Crates", "Open & heavy-duty", "/products/wooden-crates"],
+  ["Solid Wooden Box", "Heavy timber enclosure", "/products/solid-wooden-box"],
+  ["Wooden Saddle", "Load support & cradling", "/products/wooden-saddle"],
 ];
 
 export default function ProductDropdown({ active = false }: { active?: boolean }) {
@@ -24,11 +24,11 @@ export default function ProductDropdown({ active = false }: { active?: boolean }
       Products <span aria-hidden="true">⌄</span>
     </DropdownMenuTrigger>
     <DropdownMenuContent className="product-menu-content" align="center" sideOffset={10}>
-      <DropdownMenuLabel className="product-menu-label"><span>Product range</span><b>06 solutions</b></DropdownMenuLabel>
+      <DropdownMenuLabel className="product-menu-label"><span>Product range</span></DropdownMenuLabel>
       <DropdownMenuSeparator />
-      {products.map(([number, title, description, href]) =>
+      {products.map(([title, description, href]) =>
         <DropdownMenuItem key={href} className="product-menu-item" asChild>
-          <a href={href}><span>{number}</span><span className="product-menu-copy"><strong>{title}</strong><small>{description}</small></span><b>↗</b></a>
+          <a href={href}><span className="product-menu-copy"><strong>{title}</strong><small>{description}</small></span><b>↗</b></a>
         </DropdownMenuItem>
       )}
     </DropdownMenuContent>

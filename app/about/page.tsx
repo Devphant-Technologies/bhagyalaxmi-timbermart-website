@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 };
 
 const industries = [
-  ["01", "Pharmaceutical", "Protective packaging for sensitive equipment, machinery and export consignments."],
-  ["02", "Engineering", "Strong, custom-built support for engineered components and industrial assemblies."],
-  ["03", "Machinery & Equipment", "Heavy-duty crates, cases and saddles shaped around large or irregular loads."],
-  ["04", "Chemical", "Transit-ready wooden packaging supported by lashing, palletization and protective materials."],
-  ["05", "Export", "Pinewood and export-oriented packaging designed for handling, loading and long journeys."],
+  ["Pharmaceutical", "Protective packaging for sensitive equipment, machinery and export consignments."],
+  ["Engineering", "Strong, custom-built support for engineered components and industrial assemblies."],
+  ["Machinery & Equipment", "Heavy-duty crates, cases and saddles shaped around large or irregular loads."],
+  ["Chemical", "Transit-ready wooden packaging supported by lashing, palletization and protective materials."],
+  ["Export", "Pinewood and export-oriented packaging designed for handling, loading and long journeys."],
 ];
 
 const principles = [
@@ -38,9 +38,9 @@ export default function AboutPage() {
 
     <section className="infrastructure-section"><div><p className="eyebrow light"><span /> Infrastructure & workforce</p><h2>Equipped to deliver.<br /><em>Experienced to understand.</em></h2><p>Our well-equipped infrastructural base supports the delivery of consistent, dependable products. Qualified and experienced personnel anticipate customer requirements and translate them into practical packaging solutions built for handling, storage and transportation.</p></div><div className="capability-list"><div><strong>Wooden packaging</strong><span>Boxes · cases · crates · pallets · saddles</span></div><div><strong>Supporting materials</strong><span>Corrugated · bubble sheet · stretch film · silica gel</span></div><div><strong>On-site support</strong><span>Inspection · packing · lashing · stuffing · sealing</span></div><div><strong>Domestic & export</strong><span>Solutions for local, interstate and international movement</span></div></div></section>
 
-    <section className="principles-section"><div className="section-heading"><p className="eyebrow"><span /> What guides us</p><h2>Simple principles.<br />Strong relationships.</h2><p>Our working approach is built around the essentials that matter most in industrial packaging.</p></div><div className="principles-grid">{principles.map(([title,text],i)=><article key={title}><span>0{i+1}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+    <section className="principles-section"><div className="section-heading"><p className="eyebrow"><span /> What guides us</p><h2>Simple principles.<br />Strong relationships.</h2><p>Our working approach is built around the essentials that matter most in industrial packaging.</p></div><div className="principles-grid">{principles.map(([title,text])=><article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></section>
 
-    <section className="about-industries"><div><p className="eyebrow light"><span /> Industries we understand</p><h2>Packaging for the<br />realities of industry.</h2></div><div>{industries.map(([n,title,text])=><article key={title}><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+    <section className="about-industries"><div><p className="eyebrow light"><span /> Industries we understand</p><h2>Packaging for the<br />realities of industry.</h2></div><div>{industries.map(([title,text])=><article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></section>
 
     <section className="about-reach"><div><p className="eyebrow"><span /> Growing through trust</p><h2>Rooted in Ankleshwar.<br />Serving across Gujarat.</h2></div><div><p>Our customer-interactive approach has helped us serve and retain clients across Ankleshwar, Bharuch, Dahej, Jhagadia, Surat, Vapi, Vadodara, Anand, Ahmedabad and Panoli—as well as customers beyond the region.</p><a className="button orange" href="/contact">Start a conversation <span>↗</span></a></div></section>
 
