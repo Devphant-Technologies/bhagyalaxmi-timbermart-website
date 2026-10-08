@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return <main className="contact-page">
-    <header className="site-header contact-header"><a className="brand" href="/"><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /></a><nav aria-label="Primary navigation"><a href="/about">About</a><ProductDropdown /><a href="/#services">Services</a><a className="active" href="/contact">Contact</a></nav><a className="header-cta" href="tel:+919033933063">Call now <span>↗</span></a><MobileMenu /></header>
+    <header className="site-header contact-header"><a className="brand" href="/"><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /></a><nav aria-label="Primary navigation"><a href="/about">About</a><ProductDropdown /><a href="/#services">Services</a><a className="active" href="/contact">Contact</a></nav><a className="header-cta" href="tel:+919898727522">Call now <span>↗</span></a><MobileMenu /></header>
 
     <section className="contact-hero"><div><p className="eyebrow light"><span /> Get in touch</p><h1>Let’s build protection<br /><em>around your cargo.</em></h1></div><p>Share your packing requirement with us. Our team will help identify the right wooden packaging, material and on-site support for a safer journey.</p></section>
 
     <section className="contact-details">
-      <article><span>Call</span><h2>Speak with our team</h2><a href="tel:+919033933063">+91 90339 33063</a><a href="tel:+919898727522">+91 98987 27522</a><a className="direction-link" href="https://wa.me/919033933063" target="_blank" rel="noreferrer">WhatsApp ↗</a><p>For product enquiries, site packing and urgent requirements.</p></article>
+      <article><span>Call</span><h2>Speak with our team</h2><a href="tel:+919898727522">+91 98987 27522</a><a className="direction-link" href="https://wa.me/919033933063" target="_blank" rel="noreferrer">WhatsApp +91 90339 33063 ↗</a><p>For product enquiries, site packing and urgent requirements.</p></article>
       <article><span>Write</span><h2>Send an email</h2><a href="mailto:btm_7508@yahoo.co.in">btm_7508@yahoo.co.in</a><a href="mailto:btm.7508@gmail.com">btm.7508@gmail.com</a><p>Share drawings, dimensions or packing specifications by email.</p></article>
       <article><span>Visit</span><h2>Find our facility</h2><p className="address">Plot No. 7508, Karmatur Cross Road,<br />GIDC Estate, Ankleshwar – 393002</p><div className="visit-map"><iframe title="Shree Bhagyalaxmi Timber Mart location in Ankleshwar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2631725676647!2d73.03872667696965!3d21.614666280185336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be023e690d70849%3A0x5121227f7d377c04!2sShree%20Bhagyalaxmi%20Timber%20Mart!5e0!3m2!1sen!2sin!4v1789039261088!5m2!1sen!2sin" loading="lazy" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" /></div></article>
     </section>
