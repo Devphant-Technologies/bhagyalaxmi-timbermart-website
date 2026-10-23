@@ -15,6 +15,7 @@ export type ProductData = {
   ctaText?: string;
   gallery?: { src: string; alt: string; label: string; caption: string };
   typesImage?: { src: string; alt: string };
+  heroFit?: "contain";
 };
 
 export default function ProductDetail({ product }: { product: ProductData }) {
@@ -24,7 +25,7 @@ export default function ProductDetail({ product }: { product: ProductData }) {
 
   return <main className="product-page">
     <header className="site-header"><a className="brand" href="/"><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /></a><nav aria-label="Primary navigation"><a href="/about">About</a><ProductDropdown active /><a href="/#services">Services</a><a href="/catalogue">Catalogue</a><a href="/contact">Contact</a></nav><a className="header-cta" href="/contact">Get a quote <span>↗</span></a><MobileMenu /></header>
-    <section className="product-hero"><img src={product.image} alt={`${product.title} by Bhagyalaxmi Timber Mart`} /><div className="product-hero-shade" /><div className="product-hero-copy"><p className="eyebrow light"><span /> Product range</p><h1>{product.title}<br /><em>{product.accent}</em></h1><p>{product.intro}</p><a className="button orange" href="/contact">Discuss your requirement <span>↗</span></a></div><div className="product-hero-tag">{product.heroTag ?? "Standard & custom specifications"}</div></section>
+    <section className={product.heroFit === "contain" ? "product-hero hero-contain" : "product-hero"}><img src={product.image} alt={`${product.title} by Bhagyalaxmi Timber Mart`} /><div className="product-hero-shade" /><div className="product-hero-copy"><p className="eyebrow light"><span /> Product range</p><h1>{product.title}<br /><em>{product.accent}</em></h1><p>{product.intro}</p><a className="button orange" href="/contact">Discuss your requirement <span>↗</span></a></div><div className="product-hero-tag">{product.heroTag ?? "Standard & custom specifications"}</div></section>
     <section className="product-overview"><div><p className="eyebrow"><span /> Product overview</p><h2>Designed around<br />the journey.</h2></div><div>{product.overview.map(p=><p key={p}>{p}</p>)}</div></section>
     {product.gallery && <section className="product-gallery"><img src={product.gallery.src} alt={product.gallery.alt} /><div><span>{product.gallery.label}</span><strong>{product.gallery.caption}</strong></div></section>}
     <section className="product-types"><div className="product-types-heading"><p className="eyebrow light"><span /> {product.typesEyebrow ?? "Available constructions"}</p><h2>{typesTitle[0]}<br />{typesTitle[1]}</h2>{product.typesImage&&<figure className="product-types-visual"><img src={product.typesImage.src} alt={product.typesImage.alt} /></figure>}</div><div className="product-type-grid">{product.types.map((type)=><article key={type.title}>{type.image&&<img className="species-thumb" src={type.image} alt={`${type.title} timber sample`} />}<h3>{type.title}</h3><p>{type.text}</p></article>)}</div></section>
