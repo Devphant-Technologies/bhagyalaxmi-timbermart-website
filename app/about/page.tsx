@@ -24,7 +24,7 @@ const principles = [
 
 export default function AboutPage() {
   return <main className="about-page">
-    <header className="site-header"><a className="brand" href="/"><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /></a><nav aria-label="Primary navigation"><a className="active" href="/about">About</a><ProductDropdown /><a href="/#services">Services</a><a href="/contact">Contact</a></nav><a className="header-cta" href="/contact">Enquire now <span>↗</span></a><MobileMenu /></header>
+    <header className="site-header"><a className="brand" href="/"><img src="/btm-logo.png" alt="Bhagyalaxmi Timber Mart" /></a><nav aria-label="Primary navigation"><a className="active" href="/about">About</a><ProductDropdown /><a href="/#services">Services</a><a href="/catalogue">Catalogue</a><a href="/contact">Contact</a></nav><a className="header-cta" href="/contact">Enquire now <span>↗</span></a><MobileMenu /></header>
 
     <section className="about-hero"><img src="/hero-workshop.jpg" alt="Wooden packaging craftsmanship at Bhagyalaxmi Timber Mart" /><div className="about-hero-shade" /><div className="about-hero-copy"><p className="eyebrow light"><span /> Our story</p><h1>More than timber.<br /><em>A promise of protection.</em></h1><p>For over three decades, we have helped industries move their valuable goods with stronger, smarter and more dependable wooden packaging.</p></div><div className="about-year"><span>Established</span><strong>1990</strong></div></section>
 
@@ -44,6 +44,6 @@ export default function AboutPage() {
 
     <section className="about-reach"><div><p className="eyebrow"><span /> Growing through trust</p><h2>Rooted in Ankleshwar.<br />Serving across Gujarat.</h2></div><div><p>Our customer-interactive approach has helped us serve and retain clients across Ankleshwar, Bharuch, Dahej, Jhagadia, Surat, Vapi, Vadodara, Anand, Ahmedabad and Panoli—as well as customers beyond the region.</p><a className="button orange" href="/contact">Start a conversation <span>↗</span></a></div></section>
 
-    <footer className="contact-footer"><div><img src="/btm-logo-light.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p></div><a href="/contact">Contact our team <span>↗</span></a><span>© 2026 Bhagyalaxmi Timber Mart</span><p className="footer-credit">Designed and developed by <a href="https://www.instagram.com/bigartstudio?utm_source=qr&igsi=bDFhem1yc29leTRn" target="_blank" rel="noreferrer">BigArts Studio</a></p></footer>
+    <footer className="contact-footer"><div><img src="/btm-logo-light.png" alt="Bhagyalaxmi Timber Mart" /><p>Complete wooden packaging solutions<br />for export & domestic use.</p></div><a href="/contact">Contact our team <span>↗</span></a><span>© 2026 Bhagyalaxmi Timber Mart</span><nav className="footer-menu" aria-label="Footer"><a href="/about">About</a><a href="/#services">Services</a><a href="/catalogue">Catalogue</a><a href="/contact">Contact</a></nav><p className="footer-credit">Designed and developed by <a href="https://www.instagram.com/bigartstudio?utm_source=qr&igsi=bDFhem1yc29leTRn" target="_blank" rel="noreferrer">BigArts Studio</a></p></footer>
   </main>;
 }

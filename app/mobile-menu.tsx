@@ -35,6 +35,7 @@ export default function MobileMenu() {
         <SheetClose asChild><a href="/"><strong>Home</strong><b>↗</b></a></SheetClose>
         <SheetClose asChild><a href="/about"><strong>About us</strong><b>↗</b></a></SheetClose>
         <SheetClose asChild><a href="/#services"><strong>Services</strong><b>↗</b></a></SheetClose>
+        <SheetClose asChild><a href="/catalogue"><strong>Catalogue</strong><b>↗</b></a></SheetClose>
         <SheetClose asChild><a href="/contact"><strong>Contact</strong><b>↗</b></a></SheetClose>
       </div>
       <div className="mobile-products"><p>Product range</p>{products.map(([title,href])=><SheetClose asChild key={href}><a href={href}><strong>{title}</strong><b>→</b></a></SheetClose>)}</div>
