@@ -12,7 +12,7 @@ import {
 const products = [
   ["Furniture Wood", "Indian imported timbers", "/products/furniture-wood"],
   ["Wooden Pallets", "Shipping & warehousing", "/products/wooden-pallets"],
-  ["Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
+  ["Seaworthy Wooden Boxes", "Solid wood & plywood", "/products/wooden-boxes"],
   ["Wooden Crates", "Open & heavy-duty", "/products/wooden-crates"],
   ["Solid Wooden Box", "Heavy timber enclosure", "/products/solid-wooden-box"],
   ["Wooden Saddle", "Load support & cradling", "/products/wooden-saddle"],

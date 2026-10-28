@@ -14,7 +14,7 @@ import {
 const products = [
   ["Furniture Wood", "/products/furniture-wood"],
   ["Wooden Pallets", "/products/wooden-pallets"],
-  ["Wooden Boxes", "/products/wooden-boxes"],
+  ["Seaworthy Wooden Boxes", "/products/wooden-boxes"],
   ["Wooden Crates", "/products/wooden-crates"],
   ["Solid Wooden Box", "/products/solid-wooden-box"],
   ["Wooden Saddle", "/products/wooden-saddle"],
