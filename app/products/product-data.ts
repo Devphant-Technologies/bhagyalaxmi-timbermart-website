@@ -12,7 +12,7 @@ export const solidBox: ProductData = {
   code: "05",
   title: "Solid Wooden Box",
   accent: "Timber strength, fully enclosed.",
-  image: "/product-boxes.jpg",
+  image: "/solid-wooden-box-hero.jpg",
   intro: "Heavy-duty solid timber boxes built as a complete protective shell for machinery, equipment and high-value cargo.",
   overview: [
     "A solid wooden box is constructed from timber boards over a reinforced wooden frame, giving cargo a closed, impact-resistant enclosure for storage, interstate movement and export.",
